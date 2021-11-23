@@ -1,0 +1,46 @@
+#welc {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 6em;
+  line-height: 1em;
+  text-align: center;
+  /*     position: relative; */
+  /*     top: 50%; */
+  /*     transform: translateY(-50%); */
+  /*     padding-top: 2rem; */
+}
+#welc:hover {
+  cursor: default;
+}
+#welc .desfase {
+  display: inline-block;
+  top: -900px;
+  position: relative;
+  transition: ease 0.3s all;
+}
+#welc .desfase span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease 0.3s all;
+}
+#welc .desfase span.letter-2 {
+  color: rgba(64, 182, 233, 0.6);
+}
+#welc .desfase span.letter-1 {
+  color: rgba(77, 184, 81, 0.9);
+  z-index: 1;
+}
+#welc .desfase span.letter-1:hover {
+  top: -3px;
+  right: -3px;
+}
+#welc .desfase span.letter-1:hover ~ .letter-2 {
+  top: 3px;
+  right: 3px;
+}
+/* 
+a.mous {
+  width: 100px !important ;
+  height: 50px !important;
+
+} */
