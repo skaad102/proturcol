@@ -27,7 +27,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bienvenidos.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
  
 </head>
 
@@ -54,7 +57,7 @@
       margin-bottom: 100px;
   ">
         <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/hero-logo.png" alt="Proturcol sas" style="
-          width: 110%;
+          width: 115%;
       "></a>
         <h1 data-aos="zoom-in">
           ¡Bienvenidos!
@@ -488,8 +491,7 @@
           <div class="col-lg-4">
             <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
               <div class="address">
-                <i class="icofont-google-map" data-toggle="modal" data-target="#ventana"></i>
-                
+                  <i class="icofont-google-map" data-toggle="modal" data-target="#ventana"></i>                
                 <h4>Ubicacion:</h4>
                 <p>Yopal<br>Casanare</p>
               </div>
@@ -513,17 +515,22 @@
          
             
           <div class="modal " id="ventana" tabindex="-1" role="dialog" aria-labelledby="tituloventana" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 id="tituloventana">Ubicacion</h5>
+                  <h5 id="tituloventana" style="margin-bottom: 0px;">Ubicaciones: </h5>
+                  <div class="ml-3">
+                    <select class="form-control mr-2" id="select-coor">
+                      <option value="5.3334918,-72.401673">Yopal</option>
+                      <option value="5.174472,-72.5497817">Aguazul</option>
+                    </select>
+                  </div>
                     <button class="close" data-dismiss="modal" aria-label="cerrar">
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                   <div class="modal-body">
-                    <div >
-                      <h6><strong>Exitos</strong></h6>
+                    <div id="map">
                     </div>
                   </div>
                   <div class="modal-footer">
@@ -627,6 +634,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/bienvenidos.js"></script>
+
+  <script src="assets/js/map.js"></script>
 
 </body>
 

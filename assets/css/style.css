@@ -1993,3 +1993,9 @@ p{
   text-align: justify;
   padding: 5px;
 }
+
+#map{
+  height: 450px;
+  width: 100%;
+
+}
