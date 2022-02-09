@@ -1999,3 +1999,7 @@ p{
   width: 100%;
 
 }
+
+div.address{
+  cursor: pointer;
+}

@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Proturcol</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Empresa casanareña para trasporte, PROMOTORA DE TURISMO " name="description">
+  <meta content="trasporte especial; trasnporte Yopal; turismo Casanares " name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -90,7 +90,7 @@
         <ul class="nav-inner">
           <li class="nav-logo"><a href="#about"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
           <li class="active"><a href="#about">Inicio</a></li>
-          <li class="drop-down"><a href="">Acerca de</a>
+          <li class="drop-down"><a>Acerca de</a>
             <ul>
               <li><a href="#about">Quienes somos</a></li>
               <li><a href="#team">Equipo</a></li>
@@ -98,9 +98,6 @@
             </ul>
           </li>
           <li><a href="#services">Servicios</a></li>
-
-        
-
           <li><a href="#clients">Clientes</a></li>
           <li><a href="#contact">Contacto</a></li>
 
@@ -490,14 +487,14 @@
 
           <div class="col-lg-4">
             <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
-              <div class="address">
-                  <i class="icofont-google-map" data-toggle="modal" data-target="#ventana"></i>                
+              <div class="address" data-toggle="modal" data-target="#ventana">
+                  <i class="icofont-google-map" ></i>                
                 <h4>Ubicacion:</h4>
                 <p>Yopal<br>Casanare</p>
               </div>
 
               <div class="email" >
-                <i class="icofont-envelope" data-toggle="modal" data-target="#ventana"></i>
+                <i class="icofont-email"></i>
                 <h4>Correo Electronico:</h4>
                 <p>Contacto@Proturcol.com</p>
               </div>
@@ -510,9 +507,7 @@
 
             </div>
 
-          </div>
-
-         
+          </div>        
             
           <div class="modal " id="ventana" tabindex="-1" role="dialog" aria-labelledby="tituloventana" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -522,7 +517,8 @@
                   <div class="ml-3">
                     <select class="form-control mr-2" id="select-coor">
                       <option value="5.3334918,-72.401673">Yopal</option>
-                      <option value="5.174472,-72.5497817">Aguazul</option>
+                      <option value="5.172670, -72.550558">Aguazul</option>
+                      <option value="5.876852, -71.897561">Paz</option>
                     </select>
                   </div>
                     <button class="close" data-dismiss="modal" aria-label="cerrar">
